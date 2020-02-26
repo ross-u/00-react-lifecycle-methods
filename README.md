@@ -563,6 +563,4 @@ Any value returned by **`getSnapshotBeforeUpdate()`** is passed as a parameter t
 
 [React - rfcs docs](https://github.com/reactjs/rfcs/blob/master/text/0006-static-lifecycle-methods.md)
 
-[These are the concepts you should know in React.js (after you learn the basics)](https://medium.freecodecamp.org/these-are-the-concepts-you-should-know-in-react-js-after-you-learn-the-basics-ee1d2f4b8030)
 
-[Understanding React v16.4+ New Component Lifecycle Methods](
