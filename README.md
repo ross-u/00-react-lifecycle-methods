@@ -466,7 +466,7 @@ class Clock extends React.Component {
 
 <br>
 
-## [Lifecycle methods Exercise](https://gist.github.com/ross-u/dade01d6a7e03f2aa064383d6515567a)
+# [Lifecycle methods Exercise](https://gist.github.com/ross-u/dade01d6a7e03f2aa064383d6515567a)
 
 <br>
 
@@ -480,6 +480,8 @@ Let’s check the **extended diagram** below:
 
 Let's update each lifecycle phase including these methods:
 
+<br>
+
 ## I - Mounting:
 
 1. **constructor()**
@@ -487,9 +489,13 @@ Let's update each lifecycle phase including these methods:
 3. **render()**
 4. **componentDidMount()**
 
+<br>
+
 #### `UNSAFE_componentWillMount()`
 
 `componentWillMount()` - is considered **UNSAFE** method. You will notice the `UNSAFE` prefix added to it.
+
+<br>
 
 #### `getDerivedStateFromProps()`
 
@@ -499,6 +505,8 @@ it replaces the `UNSAFE_componentWillMount`)
 
 ##### [`UNSAFE_componentWillMount()`](https://reactjs.org/docs/react-component.html#unsafe_componentwillmount)
 
+<br>
+
 ## II - Updating:
 
 1. <span style="color: purple"> **getDerivedStateFromProps()**</span>
@@ -506,6 +514,10 @@ it replaces the `UNSAFE_componentWillMount`)
 3. **render()**
 4. <span style="color: purple">**getSnapshotBeforeUpdate()**</span>
 5. **componentDidUpdate()**
+
+
+<br>
+
 
 ### `shouldComponentUpdate()` -
 
@@ -515,13 +527,17 @@ it replaces the `UNSAFE_componentWillMount`)
 
 Here you can implement some logic to stop a re-render if it’s not necessary so your app will do less work.
 
+<br>
+
 ### `getSnapshotBeforeUpdate()`
 
 **`getSnapshotBeforeUpdate()`** is invoked right before the most recently rendered output is committed to the DOM.
 
 Any value returned by **`getSnapshotBeforeUpdate()`** is passed as a parameter to **`componentDidUpdate()`**.
 
-## [COMPLETE LECTURE NOTES AND EXAMPLES](https://gist.github.com/ross-u/4c6ca7e15eb713cb158bfaee88ace8eb)
+
+<br>
+
 
 ### Reference
 
