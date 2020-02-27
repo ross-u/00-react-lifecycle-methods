@@ -181,7 +181,7 @@ class Clock extends React.Component {
 
 * Since the `render()` method is already executed, **DOM will be already present**. Which means that we can reference DOM and our component inside `componentDidMount()`.
 
-- We **shouldn't call `setState()`** here since this will lead to re-rendering of the component (causes performance issues).
+- We should be aware that **calling `setState()` here will lead to the re-rendering** of the component (can affect performance).
 
 <br>
 
