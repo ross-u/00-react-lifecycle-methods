@@ -94,7 +94,7 @@ class Clock extends React.Component {
 }
 ```
 
-- We use it when we want to pass `props` to the class component.
+- We can use it to set value from the `props` in the `state` of the class component. However, this is an anti-pattern (bad practice).
 - By default it must contain `super` keyword, that receives `props` as argument from `constructor`
 - If we are setting the `state` in `constructor` we have to use `this` keyword
 - We can use it to `bind()` value of `this` to the methods
@@ -181,9 +181,15 @@ class Clock extends React.Component {
 
 * Since the `render()` method is already executed, **DOM will be already present**. Which means that we can reference DOM and our component inside `componentDidMount()`.
 
-- We should be aware that **calling `setState()` here will lead to the re-rendering** of the component (can affect performance).
+- We should be aware that **calling `setState()` here since this will lead to re-rendering** of the component (causes additional re-rendering of the component ).
+
+- `componentDidMount` should be used when it is needed to set the initial value of the `state` when the component is created, right after the first render. 
+`componentDidMount()` is commonly used  to make any needed request to the API when component loads and set the data from the API to the `state`. 
+It is as well commonly used to set values from the `props` as the initial `state` .
+
 
 <br>
+
 
 ### The `componentDidMount` methods is commonly used to set the inital `state` of the class components.
 
